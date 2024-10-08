@@ -1,10 +1,10 @@
 <?php
 
 try {
-    require('./includes/configure.php');
+    require('../includes/configure.php');
     ini_set('include_path', DIR_FS_CATALOG . PATH_SEPARATOR . ini_get('include_path'));
     chdir(DIR_FS_CATALOG);
-    require_once('./includes/application_top.php');
+    require_once('../includes/application_top.php');
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
     exit;
